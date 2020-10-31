@@ -9,15 +9,21 @@ public class HelloWorld /*extends java.lang.Object*/ {
 	// protected
 	// public 
 	
-	public int x = 10;
+	public static int x = 10;
 	
-	protected void x() {
-		
+	public int y = 20;
+	
+	protected int x() {
+		return 1;
 	}
- 
+
+	protected static int y() {
+		return 1;
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.err.println("Hello world");
+		System.err.println("Hello world ");
 		// Примитивные типы:
 		// - группа целых чисел
 		// -- byte		~signed char		-128..127
@@ -65,6 +71,83 @@ public class HelloWorld /*extends java.lang.Object*/ {
 		else { // begin
 			System.err.println("1212");
 		} // end
+		
+		while (i2 > 0) {
+			System.err.println("ekjdjks");
+			i2--;
+		}
+		
+		do {				// repeat
+			System.err.println("459049094509");
+			i2--;
+		} while (i2 > 0);	// until
+		
+		for (int index = 0; index < 10; index++) {
+			System.err.println("i="+index);
+		}
+		// int index = 0;
+		// while (index < 10) {
+		//		System.err.println("i="+index);
+		//		index++;
+		// }
+		
+		while (true) {
+			if (i2 % 2 == 0) {
+				break;
+			}
+			else {
+				i2--;
+			}
+		}
+		// --> break
+
+		// --> continue
+		while (true) {
+			if (i2 % 2 == 0) {
+				continue;
+			}
+			else {
+				break;
+			}
+		}
+
+		for (int index = 0; index < 10; /*--->continue*/ index++) {
+			continue;
+		}
+
+L1:		for (int index = 0; index < 10; index++) {
+			for (int inner = 0; inner < 10; inner++) {
+				if (index == inner) {
+					break L1;
+				}
+			}
+		}
+		// ---> break L1;
+
+L1:		for (int index = 0; index < 10; /*--->continue L1*/index++) {
+			for (int inner = 0; inner < 10; inner++) {
+				if (index == inner) {
+					continue L1;
+				}
+			}
+		}
+
+		switch (i1) {
+			case 0 :
+				System.err.println("was 0");
+				break;
+			case 10 :
+				System.err.println("was 10");
+				break;
+			case -321 :
+				System.err.println("was -321");
+				break;
+			default :
+				System.err.println("was otherwise");
+		}
+		// ---> break
+		
+		return;
 	}  
 }
 
