@@ -39,6 +39,27 @@ public class HelloWorld /*extends java.lang.Object*/ {
 		byte	b1 = 10, b2 = 20, b3 = (byte)(b1 + b2);
 		
 		int		i1 = 10, i2 = 20, i3 = b1 + b2;
+
+		i1 = -10;
+		i1 = 0x0F32;
+		i1 = 0b010010;
+		i1 = 077;
+		
+		i1 = 10_000_001;
+		
+		long	varLong;
+		
+		varLong = 123456789012345L;
+		
+		float	f1 = 10.0_3F, f2 = 3.5e-12F;
+		
+		char	c1 = 10, c2 = 'a', c3 = '\n', c4 = '\077', c5 = '\uAA32';
+		
+		boolean	bool1 = true, bool2 = false;
+		
+		String	s1 = "my string", s2 = "", s3 = "a \n b \077 c \u11F0";
+		
+		
 		
 		System.err.println("i1+i2="+(i1+i2));
 		System.err.println("i1-i2="+(i1-i2));
